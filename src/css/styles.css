@@ -233,7 +233,7 @@ summary div p {
 .proyectos {
     color: #bcc0b9;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
 }
