@@ -39,6 +39,8 @@ header {
 
 .title:hover {
     color: #d8d8d8;
+    animation: agrandarSVG 0.5s infinite alternate; /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
+    display: inline-block; /* Necesario para la transformación */
 }
 
 .subOptions {
@@ -55,18 +57,20 @@ header {
     border-radius: 3px;
     text-decoration: none;
     color: #e6e6e6;
-    margin: 2px;
-    padding: 3px;
+    margin: 4px;
+    padding: 5px;
     font-size: 14px;
 }
 
 .options:hover {
     color: #d8d8d8;
+    animation: agrandarSVG 0.5s infinite alternate; /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
+    display: inline-block; /* Necesario para la transformación */
 }
 
 @media (max-width: 680px) {
     header {
-        height: 75px;
+        height: 90px;
         padding-bottom: 5px;
     }
 
@@ -167,6 +171,7 @@ main {
     margin-top: 50px;
     margin-bottom: 30px;
     width: 80%;
+    min-height: 250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -179,7 +184,31 @@ main {
     height: 200px;
     margin: 10px;
     border-radius: 8px;
-    display: flex;
+}
+
+
+@keyframes agrandarImg {
+    from {
+      transform: scale(1); /* Inicia con el tamaño normal */
+    }
+    to {
+      transform: scale(1.05); /* Termina un 10% más grande */
+    }
+  }
+
+@keyframes agrandarSVG {
+    from {
+      transform: scale(1); /* Inicia con el tamaño normal */
+    }
+    to {
+      transform: scale(1.1); /* Termina un 10% más grande */
+    }
+  }
+
+
+.imgInfo img:hover{
+    animation: agrandarImg 0.5s infinite alternate; /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
+    display: inline-block; /* Necesario para la transformación */
 }
 
 .info {
@@ -358,21 +387,30 @@ a {
     margin: 8px;
 }
 
+.redes svg:hover{
+    animation: agrandarSVG 0.5s infinite alternate; /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
+    display: inline-block; /* Necesario para la transformación */
+}
+
 
 .github:hover {
     color: rgb(241, 150, 234);
+
 }
 
 .facebook:hover {
     color: rgb(54, 160, 247);
+
 }
 
 .whatsapp:hover {
-    color: #1fdf6f
+    color: #1fdf6f;
+
 }
 
 .email:hover {
-    color: rgb(246, 248, 121)
+    color: rgb(246, 248, 121);
+ 
 }
 
 footer {
