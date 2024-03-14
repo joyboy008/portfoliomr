@@ -2,21 +2,27 @@
 
 @keyframes agrandarImg {
     from {
-      transform: scale(1); /* Inicia con el tamaño normal */
+        transform: scale(1);
+        /* Inicia con el tamaño normal */
     }
+
     to {
-      transform: scale(1.05); /* Termina un 10% más grande */
+        transform: scale(1.05);
+        /* Termina un 10% más grande */
     }
-  }
+}
 
 @keyframes agrandarSVG {
     from {
-      transform: scale(1); /* Inicia con el tamaño normal */
+        transform: scale(1);
+        /* Inicia con el tamaño normal */
     }
+
     to {
-      transform: scale(1.1); /* Termina un 10% más grande */
+        transform: scale(1.1);
+        /* Termina un 10% más grande */
     }
-  }
+}
 
 * {
     padding: 0;
@@ -57,8 +63,10 @@ header {
 
 .title:hover {
     color: #d8d8d8;
-    animation: agrandarSVG 0.5s infinite alternate; /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
-    display: inline-block; /* Necesario para la transformación */
+    animation: agrandarSVG 0.5s infinite alternate;
+    /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
+    display: inline-block;
+    /* Necesario para la transformación */
 }
 
 .subOptions {
@@ -82,8 +90,10 @@ header {
 
 .options:hover {
     color: #d8d8d8;
-    animation: agrandarSVG 0.5s infinite alternate; /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
-    display: inline-block; /* Necesario para la transformación */
+    animation: agrandarSVG 0.5s infinite alternate;
+    /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
+    display: inline-block;
+    /* Necesario para la transformación */
 }
 
 @media (max-width: 680px) {
@@ -204,9 +214,11 @@ main {
     border-radius: 8px;
 }
 
-.imgInfo img:hover{
-    animation: agrandarImg 0.5s infinite alternate; /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
-    display: inline-block; /* Necesario para la transformación */
+.imgInfo img:hover {
+    animation: agrandarImg 0.5s infinite alternate;
+    /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
+    display: inline-block;
+    /* Necesario para la transformación */
 }
 
 .info {
@@ -312,7 +324,7 @@ summary div p {
 }
 
 .link:hover {
-    color: #d8d8d8;
+    color: aqua;
 }
 
 a {
@@ -385,9 +397,11 @@ a {
     margin: 8px;
 }
 
-.redes svg:hover{
-    animation: agrandarSVG 0.5s infinite alternate; /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
-    display: inline-block; /* Necesario para la transformación */
+.redes svg:hover {
+    animation: agrandarSVG 0.5s infinite alternate;
+    /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
+    display: inline-block;
+    /* Necesario para la transformación */
 }
 
 
@@ -408,7 +422,7 @@ a {
 
 .email:hover {
     color: rgb(246, 248, 121);
- 
+
 }
 
 footer {
