@@ -24,6 +24,10 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -196,6 +200,7 @@ main {
     flex-direction: column;
 }
 
+
 .contInfo {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -261,6 +266,14 @@ summary div p {
     margin: 3px;
     padding-bottom: 3px;
     padding-left: 20px;
+}
+
+.contenedor-proyectos{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contProyectos {
@@ -375,8 +388,7 @@ summary div p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5px;
-    margin-top: 20px;
+    margin: 20px 5px;
     padding: 10px;
     border-radius: 8px;
     background-color: #162741;
