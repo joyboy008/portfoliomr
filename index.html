@@ -1,235 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Marlon Ralda</title>
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <link rel="icon" type="image/svg" href="./src/images/agent.svg" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#8f7ada" />
-    <meta
-      name="description"
-      content="Portfolio Marlon Ralda Ingeniero de Software Junior"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav class="menu-principal" id="menu-principal">
-        <div class="subOpt">
-          <a href="https://marlonralda.dev/" class="title">Marlon Ralda</a>
-        </div>
-        <div class="subOptions">
-          <a href="#medibot" class="options">Proyectos</a>
-          <a href="#idcontacto" class="options">Contacto</a>
-          <a
-            download="CV-Marlon-Ralda"
-            href="src/docs/CURRÍCULUM VITAE Marlon Ralda.pdf"
-            class="options"
-            >Descargar CV</a
-          >
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="contInfo">
-        <div class="info">
-          <h2>Sobre mí.</h2>
-          <details open>
-            <summary>
-              <div>
-                <p>Me llamo Marlon Guillermo Ralda Ramírez.</p>
-              </div>
-            </summary>
-            <p class="descripcion">
-              Disfruto resolver problemas, tengo metas, me gusta trabajar en
-              equipo y me gusta tener la vida equilibrada en: trabajo,
-              aprendizaje, entrenamiento, descanso, juego y alimentación.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Marlon Ralda</title>
+  <link rel="stylesheet" href="./src/css/styles.css" />
+  <link rel="icon" type="image/svg" href="./src/images/agent.svg" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#8f7ada" />
+  <meta name="description" content="Portfolio Marlon Ralda Ingeniero de Software Junior" />
+</head>
+
+<body>
+  <header>
+    <nav class="menu-principal" id="menu-principal">
+      <div class="subOpt">
+        <a href="https://marlonralda.dev/" class="title">Marlon Ralda</a>
+      </div>
+      <div class="subOptions">
+        <a href="#proyectos" class="options">Proyectos</a>
+        <a href="#idcontacto" class="options">Contacto</a>
+        <a download="CV-Marlon-Ralda" href="src/docs/CURRÍCULUM VITAE Marlon Ralda.pdf" class="options">Descargar CV</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="contInfo">
+      <div class="info">
+        <h2>Sobre mí.</h2>
+        <details open>
+          <summary>
+            <div>
+              <p>Me llamo Marlon Guillermo Ralda Ramírez.</p>
+            </div>
+          </summary>
+          <p class="descripcion">
+            Disfruto resolver problemas, tengo metas, me gusta trabajar en
+            equipo y me gusta tener la vida equilibrada en: trabajo,
+            aprendizaje, entrenamiento, descanso, juego y alimentación.
+          </p>
+        </details>
+        <details>
+          <summary>
+            <div>
+              <p>Estudio una Maestria en Seguridad Informática</p>
+            </div>
+          </summary>
+          <p class="descripcion">
+            Los sábados en la Universidad Mariano Gálvez de Guatemala, en la
+            misma poseo pensum cerrado de Ingeniería en Sistemas.
+          </p>
+        </details>
+        <details>
+          <summary>
+            <div>
+              <p>Actualmente estoy desarrollando aplicaciones Web.</p>
+            </div>
+          </summary>
+          <p class="descripcion">
+            Utilizando buenas prácticas apoyandome en el aprendizaje de la
+            universidad, investigación en internet y a través de la
+            experimentación constante.
+          </p>
+        </details>
+      </div>
+      <div class="imgInfo">
+        <img src="src/images/mia.png" alt="Marlon Ralda" />
+      </div>
+    </section>
+
+    <section id="proyectos" class="contenedor-proyectos">
+      <section class="contProyectos">
+        <h2>Proyectos</h2>
+        <div class="proyectos">
+          <article class="artProyecto">
+            <h3>MediBot Manager 👨‍⚕️</h3>
+            <div class="img">
+              <a target="_blank" href="https://cmlaesperanza.com" rel="noreferrer">
+                <img width="400px" src="./src/images/cmlaesperanza.png" />
+              </a>
+            </div>
+            <p>
+              Es una App Web que se encarga de agendar citas, también lleva el
+              control de fichas medicas de los pacientes.
             </p>
-          </details>
-          <details>
-            <summary>
-              <div>
-                <p>Estudio una Maestria en Seguridad Informática</p>
-              </div>
-            </summary>
-            <p class="descripcion">
-              Los sábados en la Universidad Mariano Gálvez de Guatemala, en la
-              misma poseo pensum cerrado de Ingeniería en Sistemas.
+          </article>
+          <article class="artProyecto">
+            <h3 id="medibot">Dragon Ball</h3>
+            <div class="img">
+              <a target="_blank" href="https://dragon-ball-jxjqe.ondigitalocean.app" rel="noreferrer">
+                <img src="./src/images/dragonball.png" alt="dragonball" />
+              </a>
+            </div>
+            <p>
+              Es una página web dedicada al universo de Dragon Ball,
+              ofreciendo información detallada desde Dragon Ball hasta Dragon
+              Ball Daima.
             </p>
-          </details>
-          <details>
-            <summary>
-              <div>
-                <p>Actualmente estoy desarrollando aplicaciones Web.</p>
-              </div>
-            </summary>
-            <p class="descripcion">
-              Utilizando buenas prácticas apoyandome en el aprendizaje de la
-              universidad, investigación en internet y a través de la
-              experimentación constante.
-            </p>
-          </details>
-        </div>
-        <div class="imgInfo">
-          <img src="src/images/mia.png" alt="Marlon Ralda" />
+          </article>
+
+          <article class="artProyecto">
+            <h3>Deporte ⚽</h3>
+            <div class="video">
+              <video width="400px" src="./src/images/asistencia.mp4" controls title="asistencia del año"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></video>
+            </div>
+            <p>Un poco de lo que me gusta realizar los fines de semana.</p>
+          </article>
         </div>
       </section>
+    </section>
+    <section class="contacto" id="idcontacto">
+      <article class="gratis">
+        <dialog id="dialog">
+          <h1>¿Cómo lograste hacer esto?</h1>
+          <p>Ten cuidado a la próxima!!</p>
+          <button id="hide">Cerrar</button>
+        </dialog>
+        <button id="show">Ver información gratuita.</button>
 
-      <section id="medibot" class="contenedor-proyectos">
-        <section class="contProyectos">
-          <h2>Proyectos</h2>
-          <div class="proyectos">
-            <article class="artProyecto">
-              <h3>MediBot Manager 👨‍⚕️</h3>
-              <div class="img">
-                <a
-                  target="_blank"
-                  href="https://cmlaesperanza.com"
-                  rel="noreferrer"
-                >
-                  <img width="400px" src="./src/images/cmlaesperanza.png" />
-                </a>
-              </div>
-              <p>
-                Es una App Web que se encarga de agendar citas, también lleva el
-                control de fichas medicas de los pacientes.
-              </p>
-            </article>
-            <article class="artProyecto">
-              <h3 id="medibot">Dragon Ball</h3>
-              <div class="img">
-                <a
-                  target="_blank"
-                  href="https://dragon-ball-jxjqe.ondigitalocean.app"
-                  rel="noreferrer"
-                >
-                  <img src="./src/images/dragonball.png" alt="dragonball" />
-                </a>
-              </div>
-              <p>
-                Es una página web dedicada al universo de Dragon Ball,
-                ofreciendo información detallada desde Dragon Ball hasta Dragon
-                Ball Daima.
-              </p>
-            </article>
+        <script>
+          window.show.addEventListener("click", () => {
+            window.dialog.showModal();
+            console.log("Hi 😎");
+          });
+          window.hide.addEventListener("click", () => {
+            window.dialog.close();
+            console.log("bye. 👋");
+          });
+        </script>
+      </article>
+      <article class="redessociales">
+        <h3>Redes Sociales</h3>
+        <div class="redes">
+          <a href="https://github.com/joyboy008" target="_blank" class="github">
+            <svg fill="currentColor" height="48" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="48"
+              data-view-component="true" class="octicon octicon-mark-github">
+              <path
+                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/marlon.ralda/" target="_blank" class="facebook"><svg stroke="currentColor"
+              fill="currentColor" stroke-width="0" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+              </path>
+            </svg> </a><a href="https://wa.me/50250314174" target="_blank" class="whatsapp"><svg stroke="currentColor"
+              fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+              </path>
+            </svg> </a><a href="mailto:m.r.08@outlook.com" target="_blank" class="email"><svg stroke="currentColor"
+              fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
 
-            <article class="artProyecto">
-              <h3>Deporte ⚽</h3>
-              <div class="video">
-                <video
-                  width="400px"
-                  src="./src/images/asistencia.mp4"
-                  controls
-                  title="asistencia del año"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></video>
-              </div>
-              <p>Un poco de lo que me gusta realizar los fines de semana.</p>
-            </article>
-          </div>
-        </section>
-      </section>
-      <section class="contacto" id="idcontacto">
-        <article class="gratis">
-          <dialog id="dialog">
-            <h1>¿Cómo lograste hacer esto?</h1>
-            <p>Ten cuidado a la próxima!!</p>
-            <button id="hide">Cerrar</button>
-          </dialog>
-          <button id="show">Ver información gratuita.</button>
+  <footer>
+    <a class="link" href="#menu-principal">© Ing. Marlon Ralda 2024</a>
+  </footer>
+</body>
 
-          <script>
-            window.show.addEventListener("click", () => {
-              window.dialog.showModal();
-              console.log("Hi 😎");
-            });
-            window.hide.addEventListener("click", () => {
-              window.dialog.close();
-              console.log("bye. 👋");
-            });
-          </script>
-        </article>
-        <article class="redessociales">
-          <h3>Redes Sociales</h3>
-          <div class="redes">
-            <a
-              href="https://github.com/joyboy008"
-              target="_blank"
-              class="github"
-            >
-              <svg
-                fill="currentColor"
-                height="48"
-                aria-hidden="true"
-                viewBox="0 0 16 16"
-                version="1.1"
-                width="48"
-                data-view-component="true"
-                class="octicon octicon-mark-github"
-              >
-                <path
-                  d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
-                ></path>
-              </svg>
-            </a>
-            <a
-              href="https://www.facebook.com/marlon.ralda/"
-              target="_blank"
-              class="facebook"
-              ><svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 512 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-                ></path>
-              </svg> </a
-            ><a
-              href="https://wa.me/50250314174"
-              target="_blank"
-              class="whatsapp"
-              ><svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 448 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
-                ></path>
-              </svg> </a
-            ><a href="mailto:m.r.08@outlook.com" target="_blank" class="email"
-              ><svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path
-                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <a class="link" href="#menu-principal">© Ing. Marlon Ralda 2024</a>
-    </footer>
-  </body>
 </html>
