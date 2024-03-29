@@ -191,7 +191,7 @@ header {
     }
 }
 
-main {
+.main-container {
     width: 90%;
     margin: auto;
     display: flex;
@@ -268,7 +268,7 @@ summary div p {
     padding-left: 20px;
 }
 
-.contenedor-proyectos{
+.contenedor-proyectos {
     width: 100%;
     min-height: 100vh;
     display: flex;
