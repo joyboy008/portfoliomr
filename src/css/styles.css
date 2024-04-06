@@ -109,6 +109,12 @@ header {
     /* Necesario para la transformación */
 }
 
+@media (max-width: 1155px) {
+    .contenedor-proyectos .contProyectos {
+        padding-bottom: 10px;
+    }
+}
+
 @media (max-width: 680px) {
     header {
         height: 90px;
@@ -271,6 +277,7 @@ summary div p {
 
 .contenedor-proyectos {
     width: 100%;
+    padding: 10px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -280,13 +287,20 @@ summary div p {
 .contProyectos {
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 5px;
     padding: 10px;
+    padding-bottom: 40px;
     border-radius: 8px;
     background-color: #162741;
     box-shadow: 4px 2px 6px rgba(0, 3, 21, 1);
+}
+
+.contProyectos h1 {
+    width: 100%;
+    text-align: center;
 }
 
 .proyectos {
@@ -299,7 +313,7 @@ summary div p {
 }
 
 .artProyecto {
-    width: 400px;
+    max-width: 400px;
     margin: 10px 3px;
 }
 
