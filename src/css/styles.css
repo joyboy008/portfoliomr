@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@keyframes agrandarImg {
+@keyframes agrandarOptions {
     from {
         transform: scale(1);
         /* Inicia con el tamaño normal */
@@ -35,7 +35,10 @@ html {
 }
 
 body {
-    background: linear-gradient(110deg, rgba(22, 39, 65, 1) 0%, rgba(0, 3, 21, 1) 65%, rgba(0, 3, 21, 1) 100%);
+    background: rgb(16,12,31);
+background: linear-gradient(151deg, rgba(16,12,31,1) 0%, rgba(15,11,31,1) 57%, rgba(15,10,33,1) 100%);
+    /* background: rgb(22, 39, 65);
+    background: linear-gradient(159deg, rgba(22, 39, 65, 1) 0%, rgba(0, 3, 21, 1) 57%, rgba(0, 3, 21, 1) 100%); */
     color: whitesmoke;
     box-sizing: border-box;
 }
@@ -45,14 +48,19 @@ a {
     color: currentColor;
 }
 
+.subOpt a:hover span{
+    color: #bbff34;
+}
+
 header {
     font-weight: 600;
-    background: rgba(22, 39, 65, 1);
+    background: #171030;
     border-bottom-right-radius: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    box-shadow: 2px 4px 8px black;
 }
 
 .menu-principal {
@@ -92,18 +100,20 @@ header {
 .options {
     display: flex;
     width: auto;
-    border: whitesmoke solid 1px;
+    border: 1px solid #bbff34;
     border-radius: 3px;
     text-decoration: none;
     color: #e6e6e6;
     margin: 4px;
     padding: 5px;
     font-size: 14px;
+    transition: 0.5s;
 }
 
 .options:hover {
-    color: #d8d8d8;
-    animation: agrandarSVG 0.5s infinite alternate;
+    color: #000315;
+    background-color: #bbff34;
+    animation: agrandarOptions 1s infinite alternate;
     /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
     display: inline-block;
     /* Necesario para la transformación */
@@ -217,8 +227,8 @@ header {
     justify-content: space-between;
     padding: 10px;
     border-radius: 8px;
-    background-color: #162741;
-    box-shadow: 4px 2px 6px rgba(0, 3, 21, 1);
+    background: #171030;
+    box-shadow: 2px 4px 8px black;
 }
 
 .contInfo img {
@@ -232,7 +242,7 @@ header {
 }
 
 .imgInfo img:hover {
-    animation: agrandarImg 0.5s infinite alternate;
+    animation: agrandarSVG 1s infinite alternate;
     /* Se agranda en 2 segundos, infinitamente y alternando entre inicio y fin */
     display: inline-block;
     /* Necesario para la transformación */
@@ -244,7 +254,11 @@ header {
     margin: 5px;
     padding: 10px;
     border-radius: 8px;
-    background-color: #162741;
+    background: #171030;
+}
+
+.info h2{
+    color: #bbff34;
 }
 
 summary {
@@ -252,6 +266,20 @@ summary {
     cursor: pointer;
     position: relative;
 }
+
+@keyframes fadeIn {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
 
 details summary::before {
     content: "🪐";
@@ -263,16 +291,21 @@ details[open] summary::before {
     transform: rotate(135deg);
 }
 
+
 summary div p {
     padding-left: 20px;
     padding-bottom: 3px;
+    animation: fadeIn 1s forwards;
 }
 
+
 .info .descripcion {
+    animation: fadeIn 1.5s forwards;
     color: #bcc0b9;
     margin: 3px;
     padding-bottom: 3px;
     padding-left: 20px;
+    transition: 1s;
 }
 
 .contenedor-proyectos {
@@ -294,13 +327,15 @@ summary div p {
     padding: 10px;
     padding-bottom: 40px;
     border-radius: 8px;
-    background-color: #162741;
-    box-shadow: 4px 2px 6px rgba(0, 3, 21, 1);
+    background: #171030;
+    box-shadow: 2px 4px 8px black;
 }
 
-.contProyectos h1 {
+
+.contProyectos h2 {
     width: 100%;
     text-align: center;
+    color: #bbff34;
 }
 
 .proyectos {
@@ -359,7 +394,7 @@ summary div p {
 }
 
 .link:hover {
-    color: aqua;
+    color: #bbff34;
 }
 
 
@@ -377,15 +412,15 @@ summary div p {
 }
 
 #show:hover {
-    color: aqua;
+    color: #bbff34;
 }
 
 #dialog {
-    border: 2px solid rgb(122, 122, 122);
+    border: 2px solid rgb(42, 37, 57);
     margin: auto;
     padding: 10px;
     border-radius: 6px;
-    background: linear-gradient(110deg, rgba(22, 39, 65, 1) 0%, rgba(0, 3, 21, 1) 65%, rgba(0, 3, 21, 1) 100%);
+    background: #171030;
     color: currentColor;
 }
 
@@ -398,7 +433,7 @@ summary div p {
 }
 
 #hide:hover {
-    color: aqua;
+    color: #bbff34;
 }
 
 .contacto {
@@ -408,8 +443,8 @@ summary div p {
     margin: 20px 5px;
     padding: 10px;
     border-radius: 8px;
-    background-color: #162741;
-    box-shadow: 4px 2px 6px rgba(0, 3, 21, 1);
+    background: #171030;
+    box-shadow: 2px 4px 8px black;
 }
 
 .redessociales {
@@ -427,6 +462,7 @@ summary div p {
 .redes svg {
     width: 45px;
     margin: 8px;
+    transition: 0.5s;
 }
 
 .redes svg:hover {
@@ -447,8 +483,7 @@ summary div p {
 }
 
 .whatsapp:hover {
-    color: #1fdf6f;
-
+    color: #bbff34;
 }
 
 .email:hover {
@@ -457,17 +492,18 @@ summary div p {
 }
 
 footer {
-    background: rgba(0, 3, 21, 1);
+    background: #171030;
     display: flex;
     height: 50px;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
     border-top-left-radius: 50px;
+    box-shadow: 2px 4px 8px black;
 }
 
 footer a:hover {
-    color: #d8d8d8;
+    color: #bbff34;
 }
 
 .tecnologias {
