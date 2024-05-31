@@ -40,8 +40,7 @@ def bar(y):
   
 print(bar(5))</code></pre>
         <div class="answer">
-          <input type="text" id="answerInput"
-            placeholder="Respuesta: **">
+          <input type="text" id="answerInput" placeholder="Respuesta: **">
           <button class="options" onclick="checkAnswer()">Verificar</button>
         </div>
         <p id="resultMessage"></p>
@@ -145,6 +144,9 @@ print(bar(5))</code></pre>
       <article class="redessociales">
         <h3>Redes Sociales</h3>
         <div class="redes">
+          <div class="card">
+            <img src="https://avatars.githubusercontent.com/joyboy008?size=8" alt="joyboy">
+          </div>
           <a href="https://github.com/joyboy008" target="_blank" class="github">
             <svg fill="currentColor" height="48" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="48"
               data-view-component="true" class="octicon octicon-mark-github">
@@ -185,15 +187,15 @@ print(bar(5))</code></pre>
   </footer>
 </body>
 <script>
-  document.getElementById("nocopy").addEventListener("copy", function(event) {
-        event.preventDefault();
-        resultMessage.textContent = "No se puede copiar el código. 😞";
-        resultMessage.classList.add("shake-animation"); // Aplica la animación
-      setTimeout(function () {
-        resultMessage.classList.remove("shake-animation"); // Remueve la clase de animación después de un tiempo
-      }, 400);
-    
-    });
+  document.getElementById("nocopy").addEventListener("copy", function (event) {
+    event.preventDefault();
+    resultMessage.textContent = "No se puede copiar el código. 😞";
+    resultMessage.classList.add("shake-animation"); // Aplica la animación
+    setTimeout(function () {
+      resultMessage.classList.remove("shake-animation"); // Remueve la clase de animación después de un tiempo
+    }, 400);
+
+  });
   function openChallenge() {
     var codeChallenge = document.getElementById("codeChallenge");
     if (codeChallenge.classList.contains("init")) {
@@ -205,7 +207,7 @@ print(bar(5))</code></pre>
       codeChallenge.classList.add("init");
     }
   }
-  function closeChallenge(){
+  function closeChallenge() {
     var codeChallenge = document.getElementById("codeChallenge");
     codeChallenge.classList.remove("init");
     codeChallenge.classList.add("under");
@@ -217,7 +219,7 @@ print(bar(5))</code></pre>
     var resultMessage = document.getElementById("resultMessage");
     if (answer === correctAnswer) {
       // La respuesta es correcta, permitir la descarga
-      document.getElementById("downloadLink").setAttribute("href", "src/docs/CURRÍCULUM VITAE Marlon Ralda.pdf");
+      document.getElementById("downloadLink").setAttribute("href", "src/docs/cv-MarlonRalda.pdf");
       document.getElementById("downloadLink").setAttribute("target", "_blank");
       document.getElementById("downloadLink").setAttribute("download", "CV-Marlon-Ralda");
       document.getElementById("downloadLink").setAttribute("onclick", "closeChallenge()");
@@ -246,4 +248,5 @@ print(bar(5))</code></pre>
     console.log("Pong. 👋");
   });
 </script>
+
 </html>
