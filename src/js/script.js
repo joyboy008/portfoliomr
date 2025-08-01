@@ -31,7 +31,7 @@ function checkAnswer() {
     // La respuesta es correcta, permitir la descarga
     document
       .getElementById("downloadLink")
-      .setAttribute("href", "src/docs/cv-MarlonRalda1.pdf");
+      .setAttribute("href", "src/docs/cv-MarlonRalda123.pdf");
     document.getElementById("downloadLink").setAttribute("target", "_blank");
     document
       .getElementById("downloadLink")
