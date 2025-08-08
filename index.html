@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Marlon Ralda</title>
-  <link rel="stylesheet" href="./src/css/styles.css?v=2.1" />
-  <link rel="icon" type="image/svg" href="./src/images/agent.svg" />
+  <link rel="stylesheet" href="./src/css/styles.css?v=2.2" />
+  <link rel="icon" type="image/svg" href="./src/images/svg.svg" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#100c1f" />
   <meta name="description" content="Portfolio Marlon Ralda Ingeniero de Software Junior" />
@@ -57,44 +57,56 @@ print(bar(5))</code></pre>
         <p id="resultMessage"></p>
       </div>
     </div>
+
     <section class="contInfo">
-      <div class="info">
-        <h2>Sobre mí.</h2>
-        <details open>
-          <summary>
-            <div>
-              <p>Me llamo Marlon Guillermo Ralda Ramírez.</p>
-            </div>
-          </summary>
-          <p class="descripcion">
-            Disfruto el desarrollo web, una persona que le gusta resolver problemas, tengo metas, me gusta trabajar en
-            equipo y me gusta tener la vida equilibrada.
-          </p>
-        </details>
-        <details>
-          <summary>
-            <div>
-              <p>Estudio una Maestria en Seguridad Informática</p>
-            </div>
-          </summary>
-          <p class="descripcion">
-            Los sábados en la Universidad Mariano Gálvez de Guatemala, en la
-            misma poseo pensum cerrado de Ingeniería en Sistemas.
-          </p>
-        </details>
-        <details>
-          <summary>
-            <div>
-              <p>Actualmente estoy desarrollando aplicaciones Web.</p>
-            </div>
-          </summary>
-          <p class="descripcion">
-            Utilizando buenas prácticas apoyandome en el aprendizaje de la
-            universidad, investigación en internet y a través de la
-            experimentación constante.
-          </p>
-        </details>
+      <div class="card">
+        <div class="card-pattern-grid"></div>
+        <div class="card-overlay-dots"></div>
+
+        <div class="bold-pattern">
+          <svg viewBox="0 0 100 100">
+            <path stroke-dasharray="15 10" stroke-width="10" stroke="#000" fill="none"
+              d="M0,0 L100,0 L100,100 L0,100 Z"></path>
+          </svg>
+        </div>
+
+        <div class="card-title-area">
+          <span>Marlon Guillermo <strong>Ralda Ramírez.</strong></span>
+          <span class="card-tag">Ingeniero de Software & Ciberseguridad Junior</span>
+        </div>
+
+        <div class="card-body">
+          <div class="card-description">
+            Estudio una Maestria en Seguridad Informática. Actualmente desarrollo aplicaciones Web y brindo
+            asesorías informáticas.
+          </div>
+          <div class="card-actions"></div>
+        </div>
+
+        <div class="dots-pattern">
+          <svg viewBox="0 0 80 40">
+            <circle fill="#000" r="3" cy="10" cx="10"></circle>
+            <circle fill="#000" r="3" cy="10" cx="30"></circle>
+            <circle fill="#000" r="3" cy="10" cx="50"></circle>
+            <circle fill="#000" r="3" cy="10" cx="70"></circle>
+            <circle fill="#000" r="3" cy="20" cx="20"></circle>
+            <circle fill="#000" r="3" cy="20" cx="40"></circle>
+            <circle fill="#000" r="3" cy="20" cx="60"></circle>
+            <circle fill="#000" r="3" cy="30" cx="10"></circle>
+            <circle fill="#000" r="3" cy="30" cx="30"></circle>
+            <circle fill="#000" r="3" cy="30" cx="50"></circle>
+            <circle fill="#000" r="3" cy="30" cx="70"></circle>
+          </svg>
+        </div>
+
+        <div class="accent-shape"></div>
+        <div class="corner-slice"></div>
+
+        <div class="stamp">
+          <span class="stamp-text">Approved</span>
+        </div>
       </div>
+
       <div class="imgInfo">
         <img src="src/images/mia.png" alt="Marlon Ralda" loading="lazy" />
       </div>
@@ -136,6 +148,101 @@ print(bar(5))</code></pre>
               Ball Daima.
             </p>
           </article>
+        </div>
+      </section>
+    </section>
+
+    <section id="proyectos" class="contenedor-proyectos">
+      <section class="contProyectos">
+        <h2>Certificados</h2>
+        <p>
+          Estas certificaciones forman parte de mi camino de especialización en el ámbito de la
+          ciberseguridad y el hacking ético.
+        </p>
+        <div class="certificados">
+
+          <div class="e-card">
+            <div class="image"></div>
+
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+
+
+            <div class="infotop">
+              <img src="src/images/certificado-Python-y-AI.png" alt="python y ai" loading="lazy" />
+              <br>
+              <br>
+              <div class="name">Chatbots con Python y <strong>ChatGPT.</strong></div>
+            </div>
+          </div>
+
+          <!-- From Uiverse.io by MikeAndrewDesigner -->
+          <div class="e-card">
+
+            <div class="image"></div>
+
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+
+
+            <div class="infotop">
+              <img src="src/images/introduction-to-cybersecurity.png" alt="Marlon Ralda" loading="lazy" />
+              <br>
+              <div class="name">Introducción a la <strong>Cyberseguridad.</strong></div>
+            </div>
+          </div>
+
+          <div class="e-card">
+
+            <div class="image"></div>
+
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+
+
+            <div class="infotop">
+              <img src="src/images/SeguridadDeTerminales.png" alt="Marlon Ralda" loading="lazy" />
+              <br>
+              <div class="name">Seguridad de <br>
+                <strong>Terminales</strong>
+              </div>
+            </div>
+          </div>
+          <div class="e-card">
+            <div class="image"></div>
+
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+
+
+            <div class="infotop">
+              <img src="src/images/networking-basics.png" alt="Networking basics" loading="lazy" />
+              <br>
+              <div class="name">Redes Básicas.</div>
+            </div>
+          </div>
+
+          <div class="e-card">
+            <div class="image"></div>
+
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+
+
+            <div class="infotop">
+              <img src="src/images/networking-devices-and-initial-configuration.png"
+                alt="networking devices and initial configuration" loading="lazy" />
+              <br>
+              <div class="name">Configuración de
+                <strong>dispositivos de Red.</strong>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </section>
@@ -197,7 +304,7 @@ print(bar(5))</code></pre>
   </main>
 
   <footer>
-    <a class="link" href="#menu-principal">© Ing. Marlon Ralda 2024</a>
+    <a class="link" href="#menu-principal">© Ing. Marlon Ralda 2025</a>
   </footer>
 </body>
 <script src="src/js/script.js" defer></script>
