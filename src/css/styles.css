@@ -49,8 +49,8 @@
 
 html {
     scroll-behavior: smooth;
-    background: #100c1f;
-    background: linear-gradient(151deg, rgba(16, 12, 31, 1) 0%, rgba(15, 11, 31, 1) 57%, rgba(15, 10, 33, 1) 100%);
+    background: #171030;
+    /* background: linear-gradient(151deg, rgba(16, 12, 31, 1) 0%, rgba(15, 11, 31, 1) 57%, rgba(15, 10, 33, 1) 100%); */
 }
 
 * {
@@ -60,9 +60,8 @@ html {
 }
 
 body {
-    background-color: transparent;
-    /* background: rgb(22, 39, 65);
-    background: linear-gradient(159deg, rgba(22, 39, 65, 1) 0%, rgba(0, 3, 21, 1) 57%, rgba(0, 3, 21, 1) 100%); */
+    background: #100c1f;
+    background: linear-gradient(151deg, rgba(16, 12, 31, 1) 0%, rgba(15, 11, 31, 1) 57%, rgba(15, 10, 33, 1) 100%);
     color: whitesmoke;
     box-sizing: border-box;
 }
